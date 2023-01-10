@@ -1,0 +1,11 @@
+0
+ - change title
+ - copy css
+
+1
+  - display a hero
+  - 2 ways binding
+
+2
+  - tạo list heroes
+  - 
