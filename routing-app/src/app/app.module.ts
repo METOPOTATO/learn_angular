@@ -5,16 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
-import { ChildAComponent } from './first/child-a/child-a.component';
-import { ChildBComponent } from './first/child-b/child-b.component';
+
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     SecondComponent,
-    ChildAComponent,
-    ChildBComponent
+
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

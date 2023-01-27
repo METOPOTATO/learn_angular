@@ -1,11 +1,13 @@
 <h2>First Component</h2>
 
-<nav>
-  <ul>
-    <li><a routerLink="child-a">Child A</a></li>
-    <li><a routerLink="child-b">Child B</a></li>
-    <li><a routerLink="../second-component">Component B</a></li>
-  </ul>
-</nav>
+<ul>
+  <li *ngFor="let product of products">
+    <a routerLink="/products/{{product.id}}" (mouseenter)="show(product)">
+      <h3>{{ product.id }} -- {{ product.name }} -- {{ product.cost }}</h3>
+    </a>
+    <!-- <button (mouseenter)="show(product)">Detail</button> -->
+  </li>
+</ul>
 
-<router-outlet></router-outlet>
+
+<app-product-detail [product]="selectedProduct"></app-product-detail>
