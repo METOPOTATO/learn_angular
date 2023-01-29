@@ -1,0 +1,13 @@
+<h2>First Component</h2>
+
+<ul>
+  <li *ngFor="let product of products">
+    <a routerLink="/products/{{product.id}}" (mouseenter)="show(product)">
+      <h3>{{ product.id }} -- {{ product.name }} -- {{ product.cost }}</h3>
+    </a>
+    <!-- <button (mouseenter)="show(product)">Detail</button> -->
+  </li>
+</ul>
+
+
+<app-product-detail [product]="selectedProduct"></app-product-detail>
